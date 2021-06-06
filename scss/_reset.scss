@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #ffc107;
+}
+
+.logo img {
+  width: 3rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/****** HOVER MAIN COLOR #FFC107 *******/
+.top-bar .list-read-later i:hover,
+.top-bar__menu li a:hover,
+.top-bar__social-list li a:hover,
+.inner .read-later i:hover,
+.site-footer .site-footer__social-list li i:hover,
+.top-bar__blog .list-read-later i:hover,
+.top-bar__blog__menu li a:hover,
+.top-bar__blog__social-list li a:hover {
+  color: #ffc107;
+}
+
+#current-tab {
+  color: #ffc107;
+  padding-bottom: 5px;
+}
+
+/****** Button go to down *******/
+.go {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  color: #bbb;
+  transform: translateY(0);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -25px;
+
+  font-size: 24px;
+
+  animation-name: go;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes go {
+  25% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 30px;
+  }
+  75% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 30px;
+  }
+}
+
+.go:hover {
+  color: rgb(201, 201, 201);
+  font-size: 30px;
+  border: 2px solid rgb(201, 201, 201);
+  border-radius: 50%;
+}
